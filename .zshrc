@@ -27,7 +27,7 @@ ZSH_THEME="bureau"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=13
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -60,6 +60,12 @@ ZSH_THEME="bureau"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  archlinux
+  aws 
+  vi-mode
+  tmux
+  sudo
+  web-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,3 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=/home/ty/.cfg/ --work-tree=/home/ty'
+alias gn="shutdown -P 120"
+alias gnc="shutdown -c"
+alias lock="sudo chmod 400 bitpro"
+alias gn5="shutdown -P 6"
+alias serve="php artisan serve"
